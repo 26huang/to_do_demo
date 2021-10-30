@@ -1,0 +1,11 @@
+# API Overview
+curl -X GET "http://127.0.0.1:8000/api/"
+
+# Get All Tasks
+curl -X GET "http://127.0.0.1:8000/api/task-detail/1/"
+
+# Add A New Task
+curl -X POST -H "Content-Type: application/json" -d '{"id": 1, "title": "Feed dog","completed": false}' "http://127.0.0.1:8000/api/task-create/"
+
+# Delete A Task
+curl -X DELETE "http://127.0.0.1:8000/api/task-delete/1"
